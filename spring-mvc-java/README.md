@@ -2,7 +2,7 @@
 
 ## Spring MVC with Java Configuration Example Project
 
-###The Course
+### The Course
 The "REST With Spring" Classes: http://bit.ly/restwithspring
 
 ### Relevant Articles: 
@@ -18,3 +18,20 @@ The "REST With Spring" Classes: http://bit.ly/restwithspring
 - [Spring MVC Content Negotiation](http://www.baeldung.com/spring-mvc-content-negotiation-json-xml)
 - [Circular Dependencies in Spring](http://www.baeldung.com/circular-dependencies-in-spring)
 - [Introduction to HtmlUnit](http://www.baeldung.com/htmlunit)
+- [Spring @RequestMapping New Shortcut Annotations](http://www.baeldung.com/spring-new-requestmapping-shortcuts)
+- [Guide to Spring Handler Mappings](http://www.baeldung.com/spring-handler-mappings)
+- [Uploading and Displaying Excel Files with Spring MVC](http://www.baeldung.com/spring-mvc-excel-files)
+- [Spring MVC Custom Validation](http://www.baeldung.com/spring-mvc-custom-validator)
+- [web.xml vs Initializer with Spring](http://www.baeldung.com/spring-xml-vs-java-config)
+- [The HttpMediaTypeNotAcceptableException in Spring MVC](http://www.baeldung.com/spring-httpmediatypenotacceptable)
+- [Spring MVC and the @ModelAttribute Annotation](http://www.baeldung.com/spring-mvc-and-the-modelattribute-annotation)
+- [The Spring @Controller and @RestController Annotations](http://www.baeldung.com/spring-controller-vs-restcontroller)
+- [Spring MVC @PathVariable with a dot (.) gets truncated](http://www.baeldung.com/spring-mvc-pathvariable-dot)
+- [A Quick Example of Spring Websockets’ @SendToUser Annotation](http://www.baeldung.com/spring-websockets-sendtouser)
+- [Spring Boot Annotations](http://www.baeldung.com/spring-boot-annotations)
+- [Spring Scheduling Annotations](http://www.baeldung.com/spring-scheduling-annotations)
+- [Spring Web Annotations](http://www.baeldung.com/spring-mvc-annotations)
+- [Spring Core Annotations](http://www.baeldung.com/spring-core-annotations)
+- [Using Spring ResponseEntity to Manipulate the HTTP Response](http://www.baeldung.com/spring-response-entity)
+- [Using Spring @ResponseStatus to Set HTTP Status Code](http://www.baeldung.com/spring-response-status)
+- [Display RSS Feed with Spring MVC](http://www.baeldung.com/spring-mvc-rss-feed)

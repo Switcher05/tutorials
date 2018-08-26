@@ -9,3 +9,5 @@
 - [Custom Cascading in Spring Data MongoDB](http://www.baeldung.com/cascading-with-dbref-and-lifecycle-events-in-spring-data-mongodb)
 - [GridFS in Spring Data MongoDB](http://www.baeldung.com/spring-data-mongodb-gridfs)
 - [Introduction to Spring Data MongoDB](http://www.baeldung.com/spring-data-mongodb-tutorial)
+- [Spring Data MongoDB: Projections and Aggregations](http://www.baeldung.com/spring-data-mongodb-projections-aggregations)
+- [Spring Data Annotations](http://www.baeldung.com/spring-data-annotations)

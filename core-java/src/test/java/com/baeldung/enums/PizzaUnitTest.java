@@ -1,5 +1,6 @@
 package com.baeldung.enums;
 
+import com.baeldung.enums.Pizza.PizzaStatusEnum;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -69,11 +70,10 @@ public class PizzaUnitTest {
     }
 
     @Test
-    public void givenPizaOrder_whenDelivered_thenPizzaGetsDeliveredAndStatusChanges() {
+    public void whenDelivered_thenPizzaGetsDeliveredAndStatusChanges() {
         Pizza pz = new Pizza();
         pz.setStatus(Pizza.PizzaStatusEnum.READY);
         pz.deliver();
         assertTrue(pz.getStatus() == Pizza.PizzaStatusEnum.DELIVERED);
-    }
-
+    }   
 }

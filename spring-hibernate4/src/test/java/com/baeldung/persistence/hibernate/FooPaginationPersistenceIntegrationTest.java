@@ -7,9 +7,6 @@ import static org.junit.Assert.assertThat;
 
 import java.util.List;
 
-import com.baeldung.persistence.model.Foo;
-import com.baeldung.persistence.service.IFooService;
-import com.baeldung.spring.PersistenceConfig;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.ScrollMode;
@@ -26,10 +23,13 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
+import com.baeldung.persistence.model.Foo;
+import com.baeldung.persistence.service.IFooService;
+import com.baeldung.spring.config.PersistenceTestConfig;
 import com.google.common.collect.Lists;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = { PersistenceConfig.class }, loader = AnnotationConfigContextLoader.class)
+@ContextConfiguration(classes = { PersistenceTestConfig.class }, loader = AnnotationConfigContextLoader.class)
 public class FooPaginationPersistenceIntegrationTest {
 
     @Autowired
@@ -110,7 +110,7 @@ public class FooPaginationPersistenceIntegrationTest {
         final String countQ = "Select count (f.id) from Foo f";
         final Query countQuery = session.createQuery(countQ);
         final Long countResults = (Long) countQuery.uniqueResult();
-        final int lastPageNumber = (int) ((countResults / pageSize) + 1);
+        final int lastPageNumber = (int) (Math.ceil(countResults / pageSize));
 
         final Query selectQuery = session.createQuery("From Foo");
         selectQuery.setFirstResult((lastPageNumber - 1) * pageSize);
